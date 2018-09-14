@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CrystalsCollector</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/game.js"></script>
+</head>
+<body onload="game.newGame()">
+    <div class="header">
+        <h1>CrystalsCollector!</h1>
+    </div>
+
+    <div class="scoreboard">
+        <div class="random">
+            <span id="target">0</span>
+        </div>
+        
+        <div class="scores">
+            <p id="result">Click the Images to Play..</p>
+            <p>Wins: <span id="wins"></span></p>
+            <p>Loses: <span id="loses"></span></p>
+        </div>
+
+        <div class="info">
+            <p>Win the game by collecting enough crystals to match the number displayed! </p>
+            <p>Click on the images to collect & add up the crystals.</p>
+            <p>Good Luck!!</p>
+        </div>
+    </div>
+
+    <div class="crystals">
+        <div><img id="red" src="./assets/images/red.png"  alt="red"></div>
+        <div><img id="blue" src="./assets/images/blue.png" alt="blue"></div>
+        <div><img id="yellow" src="./assets/images/yellow.png" alt="yellow"></div>
+        <div><img id="green" src="./assets/images/green.png" alt="green"></div>
+    </div>
+
+    <div class="scorelabel"><p>Your total score is: </p></div>
+    <div class="count"><span id="total"></h1></span>
+
+    
+</body>
+</html>
