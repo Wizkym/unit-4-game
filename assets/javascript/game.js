@@ -13,7 +13,7 @@ const vals = Object.values(gems);
 // Define the game object
 var game = {
     wins: 0,
-    loses: 0,
+    losses: 0,
     total: 0,
 
     newGame: function () {
@@ -32,7 +32,7 @@ var game = {
         $("#target").text(randNum);
         $("#total").text(this.total);
         $("#wins").text(this.wins);
-        $("#loses").text(this.loses);
+        $("#losses").text(this.losses);
     },
 
     tally: function (code) {        //evaluates the new sum based on the image clicked
@@ -58,7 +58,7 @@ var game = {
             this.newGame();
         } else {
             if (this.total > randNum) {
-                this.loses++;
+                this.losses++;
                 $("#result").text("You Lost!");
                 this.newGame();
             }
